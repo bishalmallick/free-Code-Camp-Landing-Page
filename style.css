@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+body{
+  margin: 0;
+  background-color: rgb(252, 230, 255);
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.25em;
+  color: #c542a9;
+}
+
+#header{
+  display: flex;
+}
+
+header{
+  background-color: rgb(250, 199, 250);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+img {
+  margin: 10px 1em 0 0;
+}
+
+#nav-bar{
+  margin-left: auto;
+}
+
+.fa-3x {
+  color: #fd73df;
+}
+
+li{
+  padding: 20px;
+  list-style: none;
+  font-size: 1.25em;
+}
+
+a{
+  color: #c542a9;
+  text-decoration: none;
+}
+
+nav > ul{
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  #header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+#form-section{
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#email{
+  padding: 5px;
+  width: 20em;
+  margin: 20px;
+}
+
+#submit{
+  width: 10em;
+  margin-top: 10px;
+  padding: 10px 0;
+  background-color: #ffe0f9;
+  color: #fd73df;
+  border: 1px solid black;
+  font-weight: 300;
+  font-size: large;
+  margin-bottom: 2em;
+}
+
+#submit:hover {
+  cursor: pointer;
+  color: #ffe0f9;
+  background-color: #c542a9;
+  transition: background-color 1s;
+}
+
+.grid{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5em;
+}
+
+.grid > p {
+  font-size: 1.25em;
+}
+
+#working{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+}
+
+#pricing{
+  margin: 5em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  border: 2px solid #fd73df;
+  width: calc(100% / 3);
+  margin: 0 20px;
+}
+
+.product > ul {
+  padding: 0;
+}
+
+.product > button {
+  border: 1px solid #fd73df;
+  border-radius: 10px;
+  margin: 15px 0;
+  background-color: #ffe0f9;
+  color: #c542a9;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.product > button:hover {
+  cursor: pointer;
+  color: #ffe0f9;
+  background-color: #c542a9;
+  transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+footer > ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+footer > p {
+  font-size: larger;
+  text-align: center;
+}
